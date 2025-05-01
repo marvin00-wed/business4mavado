@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Academy - Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            flex-direction: column;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+        }
+        .lightbox a {
+            color: #fff;
+            text-decoration: underline;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white fixed w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold">Marvin Academy</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Home</a>
+                    <a href="about.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">About Us</a>
+                    <a href="courses.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Courses</a>
+                    <a href="gallery.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Gallery</a>
+                    <a href="contact.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery -->
+    <section class="pt-16 py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" alt="Classroom" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://unsplash.com/photos/6W4F62sN_yI">
+                <img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg" alt="Workshop" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://www.pexels.com/photo/people-sitting-on-chairs-in-front-of-table-207691/">
+                <img src="https://images.unsplash.com/photo-1588195539857-6ec4d6b2d8bd" alt="Graduation" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://unsplash.com/photos/UeYkqQh4PoI">
+                <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg" alt="Team Building" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://www.pexels.com/photo/group-of-people-sitting-on-bench-near-trees-during-daytime-3184296/">
+                <img src="https://images.unsplash.com/photo-1516321315098-34d1c2c7e417" alt="Seminar" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://unsplash.com/photos/wMKA1lXkhmQ">
+                <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Campus" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://www.pexels.com/photo/aerial-view-of-green-grass-field-near-brown-and-white-concrete-building-1181396/">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Study Group" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://unsplash.com/photos/IuL_9oM3M6k">
+                <img src="https://images.pexels.com/photos/3183181/pexels-photo-3183181.jpeg" alt="Awards" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://www.pexels.com/photo/people-holding-awards-3183181/">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="Guest Lecture" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://unsplash.com/photos/KMnhZ-k2NhM">
+                <img src="https://images.pexels.com/photos/5905700/pexels-photo-5905700.jpeg" alt="Tech Lab" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://www.pexels.com/photo/computer-lab-5905700/">
+                <img src="https://images.unsplash.com/photo-1536697246787-1f7ae568d89a" alt="Library" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://unsplash.com/photos/8n-6Qj1eJ5Y">
+                <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg" alt="Student Projects" class="w-full h-64 object-cover rounded-lg cursor-pointer gallery-img" data-source="https://www.pexels.com/photo/person-holding-white-printer-paper-267885/">
+            </div>
+            <div class="lightbox" id="lightbox">
+                <img src="" alt="Lightbox Image" id="lightbox-img">
+                <a href="" id="lightbox-source" target="_blank">Image Source</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Marvin Academy</h3>
+                    <p class="text-gray-200">Empowering minds through education since 2015.</p>
+                    <p class="text-gray-200 mt-2">Developed by Kaya Marvin</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-200 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-200 hover:text-white">About Us</a></li>
+                        <li><a href="courses.html" class="text-gray-200 hover:text-white">Courses</a></li>
+                        <li><a href="gallery.html" class="text-gray-200 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-200 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <p class="text-gray-200">123 Learning Lane, Education City, EC 12345</p>
+                    <p class="text-gray-200">Email: info@marvinacademy.com</p>
+                    <p class="text-gray-200">Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-200 pt-4 text-center">
+                <p class="text-gray-200">© 2025 Marvin Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Gallery Lightbox -->
+    <script>
+        const galleryImages = document.querySelectorAll('.gallery-img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxSource = document.getElementById('lightbox-source');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxSource.href = img.getAttribute('data-source');
+                lightboxSource.textContent = 'Image Source: ' + img.getAttribute('data-source');
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg && e.target !== lightboxSource) {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

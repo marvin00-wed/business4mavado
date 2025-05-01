@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Academy - Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white fixed w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px scoliosis-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold">Marvin Academy</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Home</a>
+                    <a href="about.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">About Us</a>
+                    <a href="courses.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Courses</a>
+                    <a href="gallery.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Gallery</a>
+                    <a href="contact.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses -->
+    <section class="pt-16 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Courses</h2>
+            <div class="mb-8 flex justify-center space-x-4">
+                <button class="filter-btn bg-blue-600 text-white px- अधि-4 py-2 rounded-md" data-category="all">All</button>
+                <button class="filter-btn bg-gray-200 text-gray-800 px-4 py-2 rounded-md" data-category="tech">Technology</button>
+                <button class="filter-btn bg-gray-200 text-gray-800 px-4 py-2 rounded-md" data-category="business">Business</button>
+                <button class="filter-btn bg-gray-200 text-gray-800 px-4 py-2 rounded-md" data-category="marketing">Marketing</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="tech">
+                    <img src="https://via.placeholder.com/400x200?text=Python+Programming" alt="Python Programming" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Python Programming</h3>
+                        <p class="text-gray-600 mb-4">Learn Python from basics to advanced topics like web scraping and automation.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 8 weeks</p>
+                    </div>
+                </div>
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="tech">
+                    <img src="https://via.placeholder.com/400x200?text=JavaScript+Mastery" alt="JavaScript Mastery" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">JavaScript Mastery</h3>
+                        <p class="text-gray-600 mb-4">Build dynamic web applications with JavaScript and modern frameworks.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 10 weeks</p>
+                    </div>
+                </div>
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="business">
+                    <img src="https://via.placeholder.com/400x200?text=Project+Management" alt="Project Management" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project Management</h3>
+                        <p class="text-gray-600 mb-4">Master Agile, Scrum, and PMP methodologies for effective project delivery.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 6 weeks</p>
+                    </div>
+                </div>
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="business">
+                    <img src="https://via.placeholder.com/400x200?text=Entrepreneurship+101" alt="Entrepreneurship 101" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Entrepreneurship 101</h3>
+                        <p class="text-gray-600 mb-4">Learn to start and grow your own business with practical strategies.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 5 weeks</p>
+                    </div>
+                </div>
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="marketing">
+                    <img src="https://via.placeholder.com/400x200?text=SEO+Essentials" alt="SEO Essentials" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">SEO Essentials</h3>
+                        <p class="text-gray-600 mb-4">Optimize websites for search engines and increase organic traffic.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 4 weeks</p>
+                    </div>
+                </div>
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="marketing">
+                    <img src="https://via.placeholder.com/400x200?text=Social+Media+Marketing" alt="Social Media Marketing" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Social Media Marketing</h3>
+                        <p class="text-gray-600 mb-4">Create engaging campaigns on platforms like Instagram and LinkedIn.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 6 weeks</p>
+                    </div>
+                </div>
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="tech">
+                    <img src="https://via.placeholder.com/400x200?text=Cloud+Computing" alt="Cloud Computing" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cloud Computing</h3>
+                        <p class="text-gray-600 mb-4">Explore AWS, Azure, and Google Cloud for scalable solutions.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 8 weeks</p>
+                    </div>
+                </div>
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="business">
+                    <img src="https://via.placeholder.com/400x200?text=Financial+Management" alt="Financial Management" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Financial Management</h3>
+                        <p class="text-gray-600 mb-4">Understand budgeting, forecasting, and financial analysis.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 7 weeks</p>
+                    </div>
+                </div>
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="marketing">
+                    <img src="https://via.placeholder.com/400x200?text=Content+Marketing" alt="Content Marketing" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Content Marketing</h3>
+                        <p class="text-gray-600 mb-4">Craft compelling content to attract and retain customers.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 5 weeks</p>
+                    </div>
+                </div>
+                <div class="course bg-white shadow-lg rounded-lg overflow-hidden" data-category="tech">
+                    <img src="https://via.placeholder.com/400x200?text=Cybersecurity+Basics" alt="Cybersecurity Basics" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cybersecurity Basics</h3>
+                        <p class="text-gray-600 mb-4">Learn to protect systems and data from cyber threats.</p>
+                        <p class="text-blue-600 font-semibold">Duration: 6 weeks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Marvin Academy</h3>
+                    <p class="text-gray-200">Empowering minds through education since 2015.</p>
+                    <p class="text-gray-200 mt-2">Developed by Kaya Marvin</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-200 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-200 hover:text-white">About Us</a></li>
+                        <li><a href="courses.html" class="text-gray-200 hover:text-white">Courses</a></li>
+                        <li><a href="gallery.html" class="text-gray-200 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-200 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <p class="text-gray-200">123 Learning Lane, Education City, EC 12345</p>
+                    <p class="text-gray-200">Email: info@marvinacademy.com</p>
+                    <p class="text-gray-200">Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-200 pt-4 text-center">
+                <p class="text-gray-200">© 2025 Marvin Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Course Filter -->
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const courses = document.querySelectorAll('.course');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-blue-600', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-gray-800');
+                });
+                button.classList.remove('bg-gray-200', 'text-gray-800');
+                button.classList.add('bg-blue-600', 'text-white');
+
+                courses.forEach(course => {
+                    if (category === 'all' || course.getAttribute('data-category') === category) {
+                        course.style.display = 'block';
+                    } else {
+                        course.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>
