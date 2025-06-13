@@ -16,11 +16,11 @@
                     <a href="index.html" class="text-2xl font-bold">Marvin Academy</a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="index.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Home</a>
-                    <a href="about.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">About Us</a>
-                    <a href="services.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Services</a>
-                    <a href="gallery.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Gallery</a>
-                    <a href="contact.html" class="hover:bg-blue-700 px-3 py-2 rounded-md">Contact Us</a>
+                    <a href="index.html" class="hover:bg-red-700 px-3 py-2 rounded-md">Home</a>
+                    <a href="about.html" class="hover:bg-red-700 px-3 py-2 rounded-md">About Us</a>
+                    <a href="services.html" class="hover:bg-red-700 px-3 py-2 rounded-md">Services</a>
+                    <a href="gallery.html" class="hover:bg-red-700 px-3 py-2 rounded-md">Gallery</a>
+                    <a href="contact.html" class="hover:bg-red-700 px-3 py-2 rounded-md">Contact Us</a>
                 </div>
             </div>
         </div>
